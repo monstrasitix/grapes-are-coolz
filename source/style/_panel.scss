@@ -1,0 +1,21 @@
+.panel {
+    &__top {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        position: initial;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    &__right {
+        flex-basis: 230px;
+        position: relative;
+        overflow-y: auto;
+    }
+
+    &__basic-actions,
+    &__switcher {
+        position: initial;
+    }
+}
