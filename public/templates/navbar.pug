@@ -1,0 +1,26 @@
+mixin navbar-button(icon = 'leaf')
+    button.button.-basic(type='button')
+        i(class=`fa-${icon}`).fa
+
+mixin navbar-split
+    div(class='navbar__column-split')
+
+
+nav(class='layout__navbar')
+    div(class='navbar__columns')
+        div(class='navbar__column')
+            +navbar-button('undo')
+            +navbar-button('redo')
+            +navbar-split
+            +navbar-button('expand-arrows-alt')
+            +navbar-button('eye')
+            +navbar-button('save')
+
+        div(class='navbar__column')
+            +navbar-button('mobile')
+            +navbar-button('tablet')
+            +navbar-button('desktop')
+            +navbar-button('tv')
+            +navbar-button('print')
+            +navbar-split
+            +navbar-button('plus')

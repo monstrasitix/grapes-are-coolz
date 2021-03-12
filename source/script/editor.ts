@@ -43,7 +43,6 @@ export const appEditor = (components) => {
         panels: {
             defaults: panelDefault,
         },
-
     });
 
     panelSetup(editor);

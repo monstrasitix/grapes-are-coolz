@@ -1,6 +1,15 @@
+const makeBlockLabel = (icon, text) => (`
+    <div class="block-element">
+        <i class="fa fa-${icon} block-element__icon"></i>
+        <div class="block-element__text">${text}</div>
+    </div>
+`);
+
+
+
 const secion = {
-    id: 'section', // id is mandatory
-    label: '<b>Section</b>', // You can use HTML/SVG inside labels
+    id: 'section',
+    label: makeBlockLabel('bars', 'Section'),
     attributes: { class: 'gjs-block-section' },
     content: `
         <section>
@@ -13,7 +22,7 @@ const secion = {
 
 const text = {
     id: 'text',
-    label: 'Text',
+    label: makeBlockLabel('info', 'Text'),
     content: `
         <div data-gjs-type="text">Insert your text here</div>
     `,
@@ -21,14 +30,9 @@ const text = {
 
 const image = {
     id: 'image',
-    label: 'Image',
-    // Select the component once it's dropped
+    label: makeBlockLabel('image', 'Image'),
     select: true,
-    // You can pass components as a JSON instead of a simple HTML string,
-    // in this case we also use a defined component type `image`
     content: { type: 'image' },
-    // This triggers `active` event on dropped components and the `image`
-    // reacts by opening the AssetManager
     activate: true,
 };
 

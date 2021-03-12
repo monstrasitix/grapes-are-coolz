@@ -2,7 +2,7 @@
 import { appEditor } from './editor';
 
 
-fetch('https://bucas.platform.aphix/')
+fetch('https://qtp.platform.aphix/')
     .then(response => response.text())
     .then(appEditor)
     .catch(console.error);
