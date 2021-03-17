@@ -36,11 +36,20 @@ const image = {
     activate: true,
 };
 
+const productInformation = {
+    id: 'product-information',
+    label: makeBlockLabel('store', 'Product'),
+    content: {
+        type: 'product-information'
+    }
+};
+
 export default (appendTo: string) => ({
     appendTo,
     blocks: [
         secion,
         text,
         image,
+        productInformation,
     ],
 });
