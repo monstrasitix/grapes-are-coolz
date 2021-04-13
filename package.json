@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel ./public/*.pug --no-cache"
+    "start": "parcel ./public/index.pug --no-cache"
   },
   "dependencies": {
     "animate.min.css": "^0.0.3",
