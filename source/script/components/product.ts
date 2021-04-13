@@ -13,7 +13,7 @@ export default (editor) => {
                     <div class="product bg-white shadow-md m-5 rounded-md overflow-hidden">
                         <img class="w-full h-60 block" src="https://via.placeholder.com/150" />
                         <div class="p-4">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum beatae quis quo soluta enim, qui, numquam quos vel, consectetur ab voluptate delectus?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                         </div>
                         <div class="flex">
                             <button class="p-2 w-10 bg-gray-300 border-green-100">-</button>
