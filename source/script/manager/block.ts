@@ -44,6 +44,14 @@ const productInformation = {
     }
 };
 
+const productList = {
+  id: 'product-list',
+  label: makeBlockLabel('store', 'Product List'),
+  content: {
+      type: 'product-list'
+  }
+};
+
 const slideshow = {
     id: 'slideshow',
     label: makeBlockLabel('image', 'Slideshow'),
@@ -187,5 +195,6 @@ export default (appendTo: string) => ({
         image,
         productInformation,
         slideshow,
+        productList,
     ],
 });
